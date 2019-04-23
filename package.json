@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "copy .env.dev .env && node ./bin/www",
+    "start": "node app.js",
     "migrate": "copy .env.dev .env && knex migrate:latest --env development",
     "rollback": "copy .env.dev .env && knex migrate:rollback --env development",
     "seed": "copy .env.dev .env && knex seed:run --env development",
