@@ -1,1 +1,1 @@
-web: node routes
+web: node app.js
