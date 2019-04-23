@@ -1,0 +1,36 @@
+{
+  "name": "intro_to_knex",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "copy .env.dev .env && node ./bin/www",
+    "migrate": "copy .env.dev .env && knex migrate:latest --env development",
+    "rollback": "copy .env.dev .env && knex migrate:rollback --env development",
+    "seed": "copy .env.dev .env && knex seed:run --env development",
+    "dev": "copy .env.dev .env && node ./bin/www",
+    "dev-migrate": "copy .env.dev .env && knex migrate:latest",
+    "dev-rollback": "copy .env.dev .env && knex migrate:rollback",
+    "dev-seed": "copy .env.dev .env && knex seed:run"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "chai": "^4.2.0",
+    "chai-string": "^1.5.0",
+    "cookie-parser": "~1.3.5",
+    "cors": "^2.8.5",
+    "debug": "~2.2.0",
+    "dotenv": "^2.0.0",
+    "express": "~4.13.1",
+    "hbs": "~3.1.0",
+    "knex": "^0.11.10",
+    "morgan": "^1.6.1",
+    "node-dig": "^1.0.1",
+    "path": "^0.12.7",
+    "pg": "^5.2.1",
+    "serve-favicon": "~2.3.0",
+    "supertest": "^4.0.2",
+    "twilio": "^3.30.1",
+    "xmldom": "^0.1.27",
+    "xpath.js": "^1.1.0"
+  }
+}
