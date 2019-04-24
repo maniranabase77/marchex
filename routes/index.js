@@ -4,8 +4,8 @@ var VoiceResponse = require('twilio').twiml.VoiceResponse;
 var dig = require('node-dig');
 
 var router = express.Router();
-const accountSid = 'AC8b4f5b72f511f0263398909b26739121';
-const authToken = 'f9aaf94c942c89549d67f1f127f43f96';
+const accountSid = '****************************';
+const authToken = '******************************';
 const client = require('twilio')(accountSid, authToken);
 var knex = require('../db/knex');
 /* GET home page. */
